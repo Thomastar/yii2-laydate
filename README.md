@@ -2,7 +2,7 @@
 
 add `tangniyuqi/yii2-laydate` to composer.json
 
-```
+```sh
 $ composer install
 ```
 

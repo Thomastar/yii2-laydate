@@ -1,6 +1,6 @@
 <?php
 /**
- * LaydateAsset
+ * LayDateAsset
  *
  *@package vendor.tangniyuqi.laydate
  *@author tangming <tangniyuqi@163.com>
@@ -11,7 +11,7 @@
  */
 namespace tangniyuqi\laydate;
 
-class LaydateAsset extends \yii\web\AssetBundle
+class LayDateAsset extends \yii\web\AssetBundle
 {
     /**
      * @inheritdoc
