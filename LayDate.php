@@ -41,7 +41,9 @@ class LayDate extends InputWidget
 
         $this->clientOptions = ArrayHelper::merge([
             'elem' => '#'.$this->options['id'],
+            'eventElem' => '#'.$this->options['id'].'-addon',
             'event' => 'focus',
+            'trigger' => 'click',
         ], $this->clientOptions);
     }
 
@@ -50,7 +52,7 @@ class LayDate extends InputWidget
      */
     public function run()
     {
-        echo $this->renderWidget()."\n";
+        echo $this->renderWidget();
 
         LayDateAsset::register($this->view);
         $options = Json::htmlEncode($this->clientOptions);
