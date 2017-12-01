@@ -40,7 +40,8 @@ class LayDate extends InputWidget
         }
 
         $this->clientOptions = ArrayHelper::merge([
-            'elem' => '#'.$this->options ['id'],
+            'elem' => '#'.$this->options['id'],
+            'event' => 'focus',
         ], $this->clientOptions);
     }
 
