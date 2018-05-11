@@ -23,8 +23,20 @@ to the ```require``` section of your `composer.json` file.
 in view:
 
 ```
-use tangniyuqi\assets\LaydateAsset;
+use tangniyuqi\assets\LayDateAsset;
 
-LaydateAsset::register($this);
+LayDateAsset::register($this);
 
+```
+
+or
+
+```
+echo $form->field($model, 'birth')->widget('tangniyuqi\laydate\LayDate', [
+        'format' => 'Y',
+        'clientOptions' => [
+            'type' => 'year', //see http://www.layui.com/doc/modules/laydate.html#type
+            'format' => 'yyyy', //see http://www.layui.com/doc/modules/laydate.html#format
+        ]
+    ]);
 ```
